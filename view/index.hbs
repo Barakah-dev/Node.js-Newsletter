@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <title>Newsletter Signup</title>
+</head>
+<body class="bg-dark text-light">
+  <div class="container">
+    <section class="text-center">
+      <div class="col-md-8 col-lg-6 m-auto">
+        <h1><i class="fas fa-newspaper fa-2x"></i></h1>
+        <h1 class="display-4">Newsletter Sign-up</h1>
+        <p class="lead">Enter your info to get our awesome monthly newsletter</p>
+
+        <form action="/signup" method="POST" class="mt-4">
+          <div class="form-group mb-4">
+            <input type="text" name="firstName" id="first-name" class="form-control" placeholder="First Name"/>
+          </div>
+
+          <div class="form-group mb-4">
+            <input type="text" name="lastName" id="last-name" class="form-control" placeholder="Last Name"/>
+          </div>
+
+          <div class="form-group mb-4">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Email"/>
+          </div>
+
+          <button type="submit" class="mt-4 btn btn-success btn-block">Sign up</button>
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
