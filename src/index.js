@@ -18,11 +18,7 @@ app.get("/", (req,res) => {
   res.render("index")
 });
 
-app.post("/signup", async (req, res) => {
-  // const firstName = req.body.firstName;
-  // const lastName = req.body.lastName;
-  // const email = req.body.email;
-  
+app.post("/signup", async (req, res) => {  
   const { firstName, lastName, email } = req.body;
 
   if (!firstName || !lastName || !email) {
